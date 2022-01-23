@@ -1,0 +1,4 @@
+# Have you been keeping notes this semesta? (200) - UNSOLVED
+`What 's the content of the note titled "Passwords"?`
+
+Notes would appear to be stored in diffrent places depending on where they are saved (Such as locally VS iCloud) but sources suggest one store that may contain the desired infomation: `/Users/<user>/Libary/Containers/group.com.apple.notes/NoteStore.sqlite` extracting the file and using DB browser there are only a few tables but the one with the infomation about the notes is called `ZICLOUDSYNCINGOBJECT` and there are tonne of feilds but scrolling across shows a number of intresting feilds `ZSNIPPET & ZTITLE1` however the note with the title passwords is blank. So we need to look elsewhere!

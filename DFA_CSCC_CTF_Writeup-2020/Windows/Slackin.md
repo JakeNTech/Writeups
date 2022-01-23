@@ -1,0 +1,6 @@
+# Slackin' (650)
+`In the company Slack, what is threatened to be deactivated if the user gets their email deactivated?`
+
+This challange is intresting, and so so fun, we know that slack is being used two ways on this machine, the app and via a web browser. The slack App is based off a web browser, like Discord and MS Teams. For this reason messages aren't stored on the client in a chat.log style file, we need to go deeper. Because its based of a Web browser chances are that the client caches the messages somwhere on the system, but where?
+The next logical setep is to run another keyword search in Autopsy for "deactivate" and there are a lot of results, 286, but slowly looking throught the files one stands out `000003.log` and looking at strings we see `You deactivate my email Ill deactivate your kneekaps` but what about the other messages sent, changing tabs from indexed strings to strings we can see alot of the other messages surrounding this, and its really intresting, It is an interesting conversation about a “hacking mac” and some kind of conference and the employees generally being rude about each other; I couldn't help my self from having a look at the rest of this file.
+The file that we looked at appears for the 5 users `F:\Users\<user>\AppData\Roaming\Slack\IndexedDB\https_app.slack.com_0.indexeddb.leveldb\000003.log`
